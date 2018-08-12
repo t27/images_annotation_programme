@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<annotation>
+  <folder>collection_01/part_2</folder>
+  <filename>pexels-photo-416117.jpg</filename>
+  <path> </path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1188</width>
+    <height>750</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Long Beak Bird</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>381.4985915493</xmin>
+      <ymin>258.5231772861</ymin>
+      <xmax>568.9014084507</xmax>
+      <ymax>529.5960233725</ymax>
+    </bndbox>
+  </object>
+</annotation>

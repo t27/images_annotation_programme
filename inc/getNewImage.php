@@ -45,7 +45,6 @@ foreach(new RecursiveIteratorIterator($it) as $file)
 	# Process file
 	if ( (strpos(strtoupper($file), '.JPG') !== false) && (strstr($file, $COLLECTION_NAME)) )
 	{
-		# echo $file . "<br>";
 		$delimiter = "/";
 		$item = explode($delimiter, $file);
 		$nbItems = count($item);
@@ -57,24 +56,26 @@ foreach(new RecursiveIteratorIterator($it) as $file)
 			$msn = $item[$nbItems-2];
 			$type = $item[$nbItems-3];
 			$image_info = array("type" => $type, "msn" => $msn, 
-			   "name" => $image_name);
+			   "name" => $image_name,"path"=>$file);
 
 			# Add the image in the list
 			$list_of_images[$image_index] = $image_info;
 			$image_index = $image_index + 1;			
 			
 			# Try to find the annotation
-			$id = str_replace(array(".jpg",".JPG"),".jpg", $image_name);
-			$xml_filename = str_replace(array(".jpg",".JPG"), ".xml", $id);
-			$xml_filepath = getXmlFile($ANNOTATIONS_DIR, $xml_filename);
-
-			if ($xml_filepath != null)
+			$id = str_replace(array(".jpg",".JPG",".jpeg"),".jpg", $image_name);
+			#$xml_filename = str_replace(array(".jpg",".JPG"), ".xml", $id);
+			#$xml_filepath = getXmlFile($IMAGE_ROOT_DIR, $xml_filename);
+			$xml_filepath = str_replace(array(".jpg",".JPG",".jpeg"), ".xml", $file);
+			if (file_exists($xml_filepath))
 			{
+				#echo "found".$xml_filepath. "<br>";
 				$list_of_annotated_images[$annotated_image_index] = $image_info;
 				$annotated_image_index = $annotated_image_index + 1;
 			}
 			else
 			{
+				#echo "not found".$xml_filepath. "<br>";
 				$list_of_not_annotated_images[$not_annotated_image_index] = $image_info;
 				$not_annotated_image_index = $not_annotated_image_index + 1;
 			}
@@ -142,12 +143,13 @@ $url = $IMAGE_WEB_DIR."/".$image_info["type"] . "/" . $image_info["msn"] . "/" .
 $id = str_replace(array(".jpg",".JPG"),".jpg", $image_info["name"]);
 
 # Get the xml file, replace .jpg by xml
-$xml_filename = str_replace(array(".jpg",".JPG"), ".xml", $id);			
+$xml_filepath = str_replace(array(".jpg",".JPG"), ".xml", $image_info["path"]);			
 
 # Try to find the annotation
-$xml_filepath = getXmlFile($ANNOTATIONS_DIR, $xml_filename);
+// $xml_filepath = getXmlFile($ANNOTATIONS_DIR, $xml_filename);
+// echo "Generated ".$xml_filepath;
 
-if ($xml_filepath != null)
+if (file_exists($xml_filepath))
 {
 	# echo "xml_filepath" . $xml_filepath;
 	$annotations = [];

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<annotation>
+  <folder>collection_01/part_1</folder>
+  <filename>bird-birds-ibis-flight-55817.jpg</filename>
+  <path> </path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1125</width>
+    <height>750</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Baby Bird</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>779.57746478873</xmin>
+      <ymin>371.57946169944</ymin>
+      <xmax>949.11971830986</xmax>
+      <ymax>498.3443100404</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Long Beak Bird</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>405.59772296015</xmin>
+      <ymin>220.31079687033</ymin>
+      <xmax>614.80075901328</xmax>
+      <ymax>370.74092935804</ymax>
+    </bndbox>
+  </object>
+</annotation>

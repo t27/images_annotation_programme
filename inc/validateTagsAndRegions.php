@@ -2,7 +2,7 @@
 
 include 'xmlVocAnnotations.php';
 include 'configuration.php';
-
+date_default_timezone_set('Asia/Kolkata');
 $obj = json_decode($_POST["sendInfo"]);
 
 $file = 'file.log';
@@ -38,7 +38,10 @@ foreach ($annotations as &$annotation)
 
 file_put_contents($file, "Before saving\n",FILE_APPEND | LOCK_EX);
 // Write xml to file
-$xml->save($ANNOTATIONS_DIR);
+
+// $xml_file_name= pathinfo($id, PATHINFO_FILENAME).".xml"; 
+// $xml_path = $folder.$xml_file_name
+$xml->save($IMAGE_ROOT_DIR."/".$folder);
 
 $response_array['status']  = 'success'; /* match error string in jquery if/else */ 
 $response_array['message'] = $id.".xml has been created.";   /* add custom message */ 

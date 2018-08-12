@@ -1050,7 +1050,7 @@ var EasyAutocomplete = (function(scope) {
 						/* List show animation */
 						.on("show.eac", function() {
 								
-							selectedElement = -1;
+							selectedElement = 0;
 							switch(config.get("list").showAnimation.type) {
 
 								case "slide":
@@ -1078,7 +1078,7 @@ var EasyAutocomplete = (function(scope) {
 						/* List hide animation */
 						.on("hide.eac", function() {
 
-							selectedElement = -1;
+							selectedElement = 0;
 							switch(config.get("list").hideAnimation.type) {
 																							
 								

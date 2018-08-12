@@ -1,3 +1,16 @@
+@t27 's Fork
+
+#Updates/Changes
+
+The images have to be in the data/images folder
+
+Made changes to UI to make the UX better
+
+- Once you select the class, you can now press "Enter" to submit and save the box(instead of explicit click) [Change in the frontend html]
+- The first item is now selected by default, so when you want to label the drawn box, start typing(autocomplete will get the best match), now just press enter to submit and save the box [Change in the easyautocomplete library]
+- Annotation files are saved in the same path as the image, with the same name as the image file [change in the php code for loading and saving xml]
+
+
 # Images Annotation Programme
 Free Online web tool to annotate images, output format is a list of xml files (Pascal VOC xml format). This image labelling application will help you creating a learning base for image recognition.
 
@@ -53,15 +66,15 @@ This format is a standard and can be easily read from [Tensorflow Object Detecti
 <annotation>
   <folder>collection_01/part_1</folder>
   <filename>pexels-photo-60091.jpg</filename>
-  <path/>
+  <path></path>
   <source>
     <database>Unknown</database>
   </source>
-  <size_part>
+  <size>
      <width>1125</width>
      <height>750</height>
      <depth>3</depth>
-  </size_part>
+  </size>
   <segmented>0</segmented>
   <object>
     <name>Bird</name>
@@ -89,3 +102,4 @@ I modified some pieces of code to adapt the features to my needs.
 ## License
 
 Code released under the <a href='http://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt' > MIT license</a>.
+

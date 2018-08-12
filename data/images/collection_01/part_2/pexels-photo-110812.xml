@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<annotation>
+  <folder>collection_01/part_2</folder>
+  <filename>pexels-photo-110812.jpg</filename>
+  <path> </path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1135</width>
+    <height>750</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Baby Bird</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>436.41549295775</xmin>
+      <ymin>199.03058325277</ymin>
+      <xmax>684.19718309859</xmax>
+      <ymax>560.32304763129</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Long Beak Bird</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>724.16197183099</xmin>
+      <ymin>259.77887372349</ymin>
+      <xmax>1053.4718309859</xmax>
+      <ymax>617.87405965618</ymax>
+    </bndbox>
+  </object>
+</annotation>

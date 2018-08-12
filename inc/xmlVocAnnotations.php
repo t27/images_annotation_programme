@@ -10,7 +10,7 @@ class xmlVocAnnotations
 	private $_localImgPath;
 	private $_boxlist;
 	 	 
-    function __construct( $foldername, $filename, $imgSize, $databaseSrc="Unknown", $localImgPath=null)
+    function __construct( $foldername, $filename, $imgSize, $databaseSrc="Unknown", $localImgPath=" ")
 	{
         $this->_foldername = $foldername;
         $this->_filename = $filename;
@@ -61,7 +61,7 @@ class xmlVocAnnotations
 		$database = $this->_domDoc->createElement('database',$this->_databaseSrc);
 		$sourceNode->appendChild($database);			
         
-		$size_part = $this->_domDoc->createElement('size_part');
+		$size_part = $this->_domDoc->createElement('size');
 		$size_partNode = $topNode->appendChild($size_part);	
 				
         $width  = $this->_domDoc->createElement('width',  strval($this->_imgSize['width']));
@@ -135,7 +135,7 @@ class xmlVocAnnotations
 		$this->prettify();
 		              
 		// Replace .jpg by .xml
-		$filename = str_replace(array(".jpg",".JPG"),".xml", $this->_filename);		
+		$filename = str_replace(array(".jpg",".JPG",".jpeg",".png"),".xml", $this->_filename);		
 		$fullPath = $targetDir. DIRECTORY_SEPARATOR . $filename;
 				
 		file_put_contents($file, "Save annotations to ". $fullPath ."\n",FILE_APPEND | LOCK_EX);					

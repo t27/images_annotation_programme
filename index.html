@@ -249,7 +249,7 @@ $(document).ready(function ()
 		else
 		{
 			// Set en empty tag
-			setNotYetValidInputTag("");
+			////setNotYetValidInputTag("");
 			region_tag_length = 0;
 		}
 
@@ -369,7 +369,7 @@ $(document).ready(function ()
 		if (tag_error_raised)
 		{
 			tag_error_raised = false
-			$("#tag_input").val("");
+			//$("#tag_input").val("");
 			$('#tag_input').css({'color':'#000'});
 		}
 	});
@@ -474,7 +474,7 @@ function isTagInAuthorizedList()
 		else
 		{
 			// Set en empty tag
-			setNotYetValidInputTag("");
+			////setNotYetValidInputTag("");
 			region_tag_length = 0;
 		}
 
@@ -793,13 +793,13 @@ function isTagInAuthorizedList()
 				    <td id="col1" style="background-color:#fff">&nbsp;</td>
 
 					<td id="col2"style="white-space:nowrap;background-color:#fff;width:60%;max-width:800px">
-							<img id="image_to_process" src="./images/wait.gif">
+							<img id="image_to_process" src="./assets/wait.gif">
 					</td>
 
 					<td id="col3" style="white-space: nowrap;padding-left:30px;width:350px;max-width:400px;background-color:#fff">
 
 							<div style="background-color:#fff">
-								<img style="display: block;margin: auto;vertical-align: middle;" src="./images/logo.png" width="100" height="100">
+								<img style="display: block;margin: auto;vertical-align: middle;" src="./assets/logo.png" width="100" height="100">
 							</div>
 
 							 <div style=" padding:2px 2px;background-color:#fff;text-align: center;">
@@ -811,7 +811,7 @@ function isTagInAuthorizedList()
 							   <div style="float:left; width:50% ;padding-top: 12px; padding-bottom: 6px">
 
 									<div style="float:left; padding-right: 8px">
-										<img src="./images/label_black.png" alt="" width="18" height="18">
+										<img src="./assets/label_black.png" alt="" width="18" height="18">
 									</div>
 
 									<div style="float:left" class="serif_small">
@@ -828,30 +828,28 @@ function isTagInAuthorizedList()
 
 							<div style="padding-top:0px;text-align:left;">
 								<input type="text" id="tag_input" name="tag_input">
-							</div>
-
-							<div style="padding-top: 4px" class="ae_small_90">
-								<span id="status"  id="image_id">> Select a region from the picture.</span>
-							</div>
-
-							<div style="padding-top:12px;text-align: right;">
-								<button id="add_region" class="tooltip ae_button_level_1">Set Tag
-								<span style="padding-left:4px;">
-								<img src="./images/ic_add_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span>
-								<span class="tooltiptext light_green">Add highlighted region with associated tag.</span></button>
+								<div style="padding-top: 4px" class="ae_small_90">
+									<span id="status" id="image_id"> Select a region from the picture.</span>
+								</div>
+								<button type="submit" id="add_region" class="tooltip ae_button_level_1">Set Tag
+									<span style="padding-left:4px;">
+										<img src="./assets/ic_add_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18">
+									</span>
+									<span class="tooltiptext light_green">Add highlighted region with associated tag.</span>
+								</button>
 							</div>
 
 							<div style="padding-top:24px;box-sizing: border-box;width=100%;text-align: right;">
 								<button id="validate_button" class="tooltip ae_button_level_1">Validate & Get next Image
 								<span class="tooltiptext light_green">Validate all the tags added to this image and go to the next image.</span>
 								<span style="padding-left:4px;">
-								<img src="./images/ic_navigate_next_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
+								<img src="./assets/ic_navigate_next_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
 							</div>
 
 							 <div style="display: inline-block; width:100%; background-color:#fff;padding-top: 6px; padding-bottom: 3px">
 							    <div style="float:left; width:50% ;padding-top: 12px; padding-bottom: 3px">
 									<div style="float:left; padding-right: 8px">
-										<img src="./images/label_collection.png" alt="" width="18" height="18">
+										<img src="./assets/label_collection.png" alt="" width="18" height="18">
 									</div>
 									<div style="float:left" class="serif_small">
 										Tags View
@@ -859,21 +857,22 @@ function isTagInAuthorizedList()
 								</div>
 							</div>
 														
-							 <div style="width:100%; background-color:#fff;padding-top: 3px; <div style="padding-top:12px;box-sizing: border-box;width=100%;text-align: right;">
+							 <div style="width:100%; background-color:#fff;padding-top: 3px;" >
+							 <!-- <div style="padding-top:12px;box-sizing: border-box;width=100%;text-align: right;"> -->
 								<button id="all_annotations_button" class="tooltip ae_button_level_3">All
 								<span class="tooltiptext light_violet">Display all Annotations</span>
 								<span style="padding-left:4px;">
-								<img src="./images/label_all_annotations.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
+								<img src="./assets/label_all_annotations.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
 								
 								<button id="none_annotation_button" class="tooltip ae_button_level_3">None
 								<span class="tooltiptext light_violet">Hide the Annotations</span>
 								<span style="padding-left:4px;">
-								<img src="./images/label_none_annotations.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
+								<img src="./assets/label_none_annotations.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
 								
 								<button id="one_annotation_button" class="tooltip ae_button_level_3">
 								<span class="tooltiptext light_violet">Click to display next annotation</span>
 								<span style="padding-left:4px;">
-								<img src="./images/ic_navigate_next_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
+								<img src="./assets/ic_navigate_next_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
 								
 							</div>
 														
@@ -882,14 +881,14 @@ function isTagInAuthorizedList()
 								<button onclick="window.location.reload()" class="tooltip ae_button_level_2">Ignore & Get next image
 								<span class="tooltiptext light_blue">Ignore this image and associated tags and go to the next image.</span>
 								<span style="padding-left:4px;">
-								<img src="./images/ic_replay_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
+								<img src="./assets/ic_replay_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
 							</div>
 
 							<div style="padding-top:24px;box-sizing: border-box;width=100%;text-align: right;">
 								<button onclick="window.location.href='thank_you.html'" class="tooltip ae_button_level_2">Leave
 								<span class="tooltiptext light_blue">Leave this page, cancel all tags of this image. Validated tags will be kept.</span>
 								<span style="padding-left:4px;">
-								<img src="./images/ic_exit_to_app_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
+								<img src="./assets/ic_exit_to_app_black_48dp.png" style="vertical-align: bottom;" alt="" width="18" height="18"></span></button>
 							</div>
 
 							<div style="padding-top: 12px" class="ae_small_80">
