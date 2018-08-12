@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <annotation>
-  <folder>collection_01/part_1</folder>
-  <filename>pexels-photo-56733.jpg</filename>
+  <folder>collection_01/part_2</folder>
+  <filename>pexels-photo-151048.jpg</filename>
   <path> </path>
   <source>
     <database>Unknown|localhost</database>
   </source>
   <size>
-    <width>499</width>
+    <width>1075</width>
     <height>750</height>
     <depth>3</depth>
   </size>
   <segmented>0</segmented>
   <object>
-    <name>Baby Bird</name>
+    <name>Eagle</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>72.659528907923</xmin>
-      <ymin>160.56187766714</ymin>
-      <xmax>344.06423982869</xmax>
-      <ymax>543.56330014225</ymax>
+      <xmin>599.57746478873</xmin>
+      <ymin>252.10491775677</ymin>
+      <xmax>956.9014084507</xmax>
+      <ymax>495.88204543749</ymax>
     </bndbox>
   </object>
 </annotation>

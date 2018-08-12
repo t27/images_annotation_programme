@@ -7,7 +7,8 @@ class xmlVocReadAnnotationsFile
 	private $_xmlFilePath;
 	private $_boxlist = [];
 	private $error_loading = false;
-		  
+	private $source = "";
+
     function __construct($xmlFilePath)
 	{
         $this->_xmlFilePath = $xmlFilePath;
@@ -51,6 +52,11 @@ class xmlVocReadAnnotationsFile
 	{
 		return $this->_boxlist;
 	}	
+
+	public function getSource()
+	{
+		return $this->source;
+	}
 		 
 	public function parseXML()
 	{
@@ -68,7 +74,7 @@ class xmlVocReadAnnotationsFile
 		{			
 			$filename = $this->_domDoc->getElementsByTagName("filename")[0];
 			# echo $filename->nodeValue, PHP_EOL;
-			 
+			$this->source = trim($this->_domDoc->getElementsByTagName("source")[0]->nodeValue.PHP_EOL);
 			# Get annotations
 			$listeObject = $this->_domDoc->getElementsByTagName('object');
 			

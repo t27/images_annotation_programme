@@ -4,7 +4,7 @@
   <filename>pexels-photo-60091.jpg</filename>
   <path> </path>
   <source>
-    <database>Unknown</database>
+    <database>Unknown|localhost</database>
   </source>
   <size>
     <width>1125</width>
@@ -19,9 +19,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>510.21126760563</xmin>
-      <ymin>254.31624581685</ymin>
+      <ymin>254.35931463953</ymin>
       <xmax>641.72535211268</xmax>
-      <ymax>534.77715241862</ymax>
+      <ymax>534.86771769993</ymax>
     </bndbox>
   </object>
 </annotation>

@@ -1,7 +1,9 @@
 INFO - getNewImage.php
-Random index = 15
-Not annotated 80%
-No annotations found.
-Annotations a:0:{}
-URL image = data/images/collection_01/part_2/pexels-photo-151048.jpg
-Annotations a:4:{s:3:"url";s:56:"data/images/collection_01/part_2/pexels-photo-151048.jpg";s:2:"id";s:23:"pexels-photo-151048.jpg";s:6:"folder";s:20:"collection_01/part_2";s:11:"annotations";a:0:{}}
+Random index = 24
+Annotated 20%
+xml_filepath ../data/images/collection_01/part_1/pexels-photo-56733.xml
+Parse XML
+Loading Annotations a:1:{i:0;a:5:{s:1:"x";s:15:"72.659528907923";s:1:"y";s:15:"160.56187766714";s:5:"width";d:271.404710920767;s:6:"height";d:383.00142247510996;s:3:"tag";s:9:"Baby Bird";}}fromUnknown|localhost
+Annotations a:1:{i:0;a:5:{s:1:"x";s:15:"72.659528907923";s:1:"y";s:15:"160.56187766714";s:5:"width";d:271.404710920767;s:6:"height";d:383.00142247510996;s:3:"tag";s:9:"Baby Bird";}}
+URL image = data/images/collection_01/part_1/pexels-photo-56733.jpg
+Annotations a:5:{s:3:"url";s:55:"data/images/collection_01/part_1/pexels-photo-56733.jpg";s:2:"id";s:22:"pexels-photo-56733.jpg";s:6:"folder";s:20:"collection_01/part_1";s:11:"annotations";a:1:{i:0;a:5:{s:1:"x";s:15:"72.659528907923";s:1:"y";s:15:"160.56187766714";s:5:"width";d:271.404710920767;s:6:"height";d:383.00142247510996;s:3:"tag";s:9:"Baby Bird";}}s:6:"source";s:17:"Unknown|localhost";}

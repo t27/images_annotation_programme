@@ -4,7 +4,7 @@
   <filename>gulls-seagull-wings-feather-56593.jpg</filename>
   <path> </path>
   <source>
-    <database>Unknown</database>
+    <database>Unknown|localhost</database>
   </source>
   <size>
     <width>1120</width>
@@ -19,9 +19,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>862.08450704225</xmin>
-      <ymin>43.38258886974</ymin>
+      <ymin>43.387203597067</ymin>
       <xmax>1084.5070422535</xmax>
-      <ymax>420.41672486495</ymax>
+      <ymax>420.46144576796</ymax>
     </bndbox>
   </object>
   <object>
@@ -31,9 +31,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>479.54929577465</xmin>
-      <ymin>295.78513497437</ymin>
+      <ymin>295.81659846655</ymin>
       <xmax>714.59154929577</xmax>
-      <ymax>623.90944470593</ymax>
+      <ymax>623.97581169875</ymax>
     </bndbox>
   </object>
   <object>
@@ -43,9 +43,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>93.070422535211</xmin>
-      <ymin>341.53323585039</ymin>
+      <ymin>341.56956569602</ymin>
       <xmax>324.95774647887</xmax>
-      <ymax>720.13820861758</ymax>
+      <ymax>720.2148117332</ymax>
     </bndbox>
   </object>
 </annotation>

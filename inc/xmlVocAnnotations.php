@@ -39,7 +39,6 @@ class xmlVocAnnotations
                 ($this->_imgSize == null) || 
                 (count($this->_boxlist) <= 0) )
 		{
-			
 			return null;
 		}
 	

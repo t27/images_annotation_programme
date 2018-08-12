@@ -674,6 +674,7 @@ function isTagInAuthorizedList()
                 width: 0,
                 height: 0,
 				annotations: [],
+				source:""
             };
 
 	   },
@@ -757,6 +758,7 @@ function isTagInAuthorizedList()
 						image_info.url = dataJson.url;
 						image_info.id = dataJson.id;
 						image_info.folder = dataJson.folder;
+						image_info.source = dataJson.source;
 						image_id   = dataJson.id;
 						json_annotations = dataJson.annotations;
 						$('#image_id').text(image_id);

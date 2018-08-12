@@ -4,7 +4,7 @@
   <filename>pexels-photo-110812.jpg</filename>
   <path> </path>
   <source>
-    <database>Unknown</database>
+    <database>Unknown|localhost</database>
   </source>
   <size>
     <width>1135</width>
@@ -19,9 +19,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>436.41549295775</xmin>
-      <ymin>199.03058325277</ymin>
+      <ymin>199.06026273518</ymin>
       <xmax>684.19718309859</xmax>
-      <ymax>560.32304763129</ymax>
+      <ymax>560.40660312194</ymax>
     </bndbox>
   </object>
   <object>
@@ -31,9 +31,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>724.16197183099</xmin>
-      <ymin>259.77887372349</ymin>
+      <ymin>259.81761200375</ymin>
       <xmax>1053.4718309859</xmax>
-      <ymax>617.87405965618</ymax>
+      <ymax>617.96619716583</ymax>
     </bndbox>
   </object>
 </annotation>

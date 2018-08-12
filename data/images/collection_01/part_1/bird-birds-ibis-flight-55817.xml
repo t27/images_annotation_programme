@@ -4,7 +4,7 @@
   <filename>bird-birds-ibis-flight-55817.jpg</filename>
   <path> </path>
   <source>
-    <database>Unknown</database>
+    <database>Unknown|localhost</database>
   </source>
   <size>
     <width>1125</width>
@@ -19,9 +19,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>779.57746478873</xmin>
-      <ymin>371.57946169944</ymin>
+      <ymin>371.62563942028</ymin>
       <xmax>949.11971830986</xmax>
-      <ymax>498.3443100404</ymax>
+      <ymax>500.20290433389</ymax>
     </bndbox>
   </object>
   <object>
@@ -31,9 +31,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>405.59772296015</xmin>
-      <ymin>220.31079687033</ymin>
+      <ymin>220.33817580681</ymin>
       <xmax>614.80075901328</xmax>
-      <ymax>370.74092935804</ymax>
+      <ymax>370.78700287098</ymax>
     </bndbox>
   </object>
 </annotation>

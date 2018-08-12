@@ -4,7 +4,7 @@
   <filename>street-animals-birds-doves.jpg</filename>
   <path> </path>
   <source>
-    <database>Unknown</database>
+    <database>Unknown|localhost</database>
   </source>
   <size>
     <width>1125</width>
@@ -19,9 +19,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>574.3838028169</xmin>
-      <ymin>276.51828802916</ymin>
+      <ymin>276.54962508463</ymin>
       <xmax>878.60915492958</xmax>
-      <ymax>504.70529935408</ymax>
+      <ymax>504.76249621463</ymax>
     </bndbox>
   </object>
   <object>
@@ -31,9 +31,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>429.4014084507</xmin>
-      <ymin>141.81497819694</ymin>
-      <xmax>556.16197183099</xmax>
-      <ymax>339.88059020383</ymax>
+      <ymin>141.83104969756</ymin>
+      <xmax>557.97283702213</xmax>
+      <ymax>339.91910793438</ymax>
     </bndbox>
   </object>
 </annotation>

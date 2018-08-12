@@ -3,6 +3,7 @@
 include 'xmlVocReadAnnotationsFile.php';
 include 'configuration.php';
 
+
 $service_requested = $_GET["info"];
 
 # Search the xml file in a $dir
@@ -144,7 +145,7 @@ $id = str_replace(array(".jpg",".JPG"),".jpg", $image_info["name"]);
 
 # Get the xml file, replace .jpg by xml
 $xml_filepath = str_replace(array(".jpg",".JPG"), ".xml", $image_info["path"]);			
-
+$source = "";
 # Try to find the annotation
 // $xml_filepath = getXmlFile($ANNOTATIONS_DIR, $xml_filename);
 // echo "Generated ".$xml_filepath;
@@ -164,7 +165,8 @@ if (file_exists($xml_filepath))
 		if (!$xml->hasError())
 		{
 			$annotations = $xml->getAnnotations();
-			file_put_contents($file, "Annotations ".serialize($annotations)."\n",FILE_APPEND | LOCK_EX);
+			$source = $xml->getSource();
+			file_put_contents($file, "Loading Annotations ".serialize($annotations)."from".$source."\n",FILE_APPEND | LOCK_EX);
 		}
 	}	
 	else
@@ -185,7 +187,7 @@ file_put_contents($file, "URL image = ".$url."\n",FILE_APPEND | LOCK_EX);
 
 # Prepare message to send
 $data = array ("url" => $url, "id" => $id, "folder" => $image_info["type"] . "/" . $image_info["msn"], 
-				"annotations" => $annotations);
+				"annotations" => $annotations,"source"=>$source);
 	
 file_put_contents($file, "Annotations ".serialize($data)."\n",FILE_APPEND | LOCK_EX);
 	
